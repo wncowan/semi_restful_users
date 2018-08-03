@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>User Profile</h1>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>Submitted</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{my_user.first_name}}</td>
+            <td>{{my_user.last_name}}</td>
+            <td>{{my_user.email}}</td>
+            <td>{{my_user.created_at}}</td>
+            <td><a href="/users/{{my_user.id}}/edit">Edit</a><a href="/users/{{my_user.id}}/delete">Delete</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+</body>
+</html>
